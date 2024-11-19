@@ -1,4 +1,5 @@
 sudoku_app/
+    
     ├── static/
     │   └── style.css
     ├── templates/
