@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2; 
+}
+
+
+table {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.sudokuImg {
+    background: url(/static/sudoku.jpg) no-repeat; position: fixed; bottom: 0px; right: 0px;;
+}
+td {
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    text-align: center;
+}
+td:nth-child(3n) {
+    border-right: 3px solid;
+}
+td:nth-child(9n) {
+    border-right: 4px solid;
+}
+td:first-child {
+    border-left: 4px solid;
+}
+tr:first-child td {
+    border-top: 4px solid;
+}
+tr:nth-child(3n) td {
+    border-bottom: 3px solid;
+}
+tr:nth-child(9n) td {
+    border-bottom: 4px solid;
+}
+data {
+    font-size: 25px;
+    background: lightgray;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+input[type=text] {
+    text-align: center;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    outline: none;
+    border: none;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    float: right;
+}
+button[type="submit"]:hover {
+    background-color: #357ab8;  
+}
+
+.alert {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.alert-success {
+    color: green;
+}
+.alert-error {
+    color: red;
+}
