@@ -9,7 +9,6 @@ def generate_board(difficulty):
 def fill_board(board):
     for i in range(0, 9, 3):
         fill_3x3_board(board, i, i)
-    # Mengisi bagian lain
     fill_remaining(board)
 
 def fill_3x3_board(board, row, col):
